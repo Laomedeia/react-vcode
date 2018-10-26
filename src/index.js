@@ -185,7 +185,7 @@ class Vcode extends React.Component {
     if (isImg) {
       // 用户传递了一张图片
       const dom = document.createElement('img');
-      dom.style.cssText = ['display: block', 'max-width:100%', 'max-height:100%'].join(';');
+      dom.style.cssText = ['display: block', 'width:100%', 'height:100%', 'max-width:100%', 'max-height:100%'].join(';');
       dom.src = value;
       div.appendChild(dom);
       this.props.onChange && this.props.onChange(null);
